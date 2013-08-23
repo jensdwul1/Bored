@@ -1,0 +1,25 @@
+<?php echo   $this->doctype() . "\n"; ?>
+<html lang="en" >
+    <head>
+    <?php 
+        echo $this->headMeta() . "\n" 
+           . $this->headTitle() . "\n" 
+           . $this->headLink() . "\n" 
+           . $this->headScript() . "\n" ;
+    ?>
+        <!--[if !IE 7]>
+            <style type="text/css">
+                    #footerwrap {display:table;height:100%}
+            </style>
+        <![endif]-->
+    </head>
+    <body>
+    <?php 
+        echo $this->render('header.phtml') . "\n"; 
+        echo "<div id='main' class='span12'>" . $this->layout()->content . "</div>" . "\n"; 
+    ?>
+    <?php
+        echo $this->inlineScript() ."\n";
+    ?>
+    </body>
+</html>

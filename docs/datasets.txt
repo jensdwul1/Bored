@@ -1,0 +1,35 @@
+Bored
+Discover what to do in a city full of fun.
+
+An informative and interactive webapp that tells you about all the things you can do in Ghent when you are bored.
+
+
+DATASETS:
+
+Wijken
+http://datatank.gent.be/Grondgebied/Wijken.json
+
+Bibliotheek
+http://datatank.gent.be/Cultuur-Sport-VrijeTijd/Bibliotheek.json
+
+Sportcentra
+http://datatank.gent.be/Cultuur-Sport-VrijeTijd/Sportcentra.json
+
+Bioscopen
+http://datatank.gent.be/Cultuur-Sport-VrijeTijd/Bioscopen.json
+
+Parken
+http://datatank.gent.be/MilieuEnNatuur/Parken.json
+
+Speelterreinen 
+http://datatank.gent.be/Cultuur-Sport-VrijeTijd/Speelterreinen.json
+
+Visplaatsen
+http://datatank.gent.be/Cultuur-Sport-VrijeTijd/VisplaatsenHavenGent.json 
+
+DigitaalTalentPunten
+http://datatank.gent.be/Infrastructuur/DigitaalTalentpunten.json
+
+HotSpots 
+http://datatank.gent.be/Toerisme/VisitGentSpots.json
+http://datatank.gent.be/Toerisme/VisitGentOpeningsuren.json

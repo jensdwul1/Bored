@@ -1,0 +1,262 @@
+/*----------------------BASIC NEEDS---------*/
+header{
+	height:100%;
+    margin:0px !important;
+	border-right:3px #FFCC00 solid;
+	border-bottom:3px #FFCC00 solid;
+	border-top:3px #FFCC00 solid;
+	border-radius:15px;
+}
+.push{
+	margin-top:50px;
+}
+.logo{
+	background: url('../../_assets/img/logo_big.png');
+}
+.logo:hover{
+	background: url('../../_assets/img/logo_big_hover.png');
+}
+.navigation{
+    padding-top: 22px;
+}
+.main-nav{
+	margin:0px;
+	height:400px;
+}
+
+.main-nav li{
+    clear:both;
+	width:100%;
+	cursor:pointer;
+	height:25%;
+}
+
+.main-nav li a:hover{
+	background-size:90%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.main-nav li a{
+	height:100%;
+	display:block;
+	background-size:90%;
+	background-repeat:no-repeat;
+	background-position:center;
+	transition:all 0.5s linear 0s;
+}
+
+.LoginIcon{
+	background: url('../../_assets/img/login_icon.png');
+}
+.RegisterIcon{
+	background: url('../../_assets/img/register_icon.png');	
+}
+.AboutIcon{
+	background: url('../../_assets/img/about_icon.png');
+}
+.UserIcon{
+	background: url('../../_assets/img/profile_icon.png');
+}
+.FunIcon{
+	background: url('../../_assets/img/fun_icon.png');
+}
+.LogoutIcon{
+	background: url('../../_assets/img/logout_icon.png');
+}
+
+.LoginIcon:hover{
+	background: url('../../_assets/img/login_icon_hover.png');
+}
+.RegisterIcon:hover{
+	background: url('../../_assets/img/register_icon_hover.png');	
+}
+.AboutIcon:hover{
+	background: url('../../_assets/img/about_icon_hover.png');
+}
+.UserIcon:hover{
+	background: url('../../_assets/img/profile_icon_hover.png');
+}
+.FunIcon:hover{
+	background: url('../../_assets/img/fun_icon_hover.png');
+}
+.LogoutIcon:hover{
+	background: url('../../_assets/img/logout_icon_hover.png');
+}
+
+
+.profile-pic{
+    margin-top: 15px;
+    width: 100px;
+    height:100px;
+}
+footer p{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.center{
+    text-align: center;
+}
+
+h1{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.firstblock{
+    margin-top: 0px;
+}
+.lead-push{
+    margin-top: 15px;
+}
+
+.pillBtn{
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    color: #FFF;
+    background: #FFCC00;
+    width: 100px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: central;
+    padding: 0 5px;
+    margin-right: 20px;
+	transition:all 0.5s linear 0s;
+	text-shadow:0.1em 0.1em 0.05em #333;
+}
+
+.pillBtn:hover {
+    color: #FFCC00;
+    background: #FFF;
+    text-decoration: none;
+}
+
+.line{
+    border: none;
+    border-top: 1px solid #FFCC00;
+    margin: 50px 0;
+}
+
+.form-field{
+    margin-bottom: 10px !important;
+}
+.right{
+    float: right;
+}
+
+/*--------------------------REGISTER----------*/
+
+
+#register textarea{
+    resize:none;
+    height: 200px;
+}
+
+/*--------------------PROFILE PAGE----------*/
+.img-profile{
+    width: 105px;
+}
+
+.btn-answers{
+    margin-top: 90px;
+    margin-bottom: 100px;
+}
+/*--------------------------USERS PAGE-----------*/
+.btn-bottom-users{
+    margin-top: 20px;
+}
+.user{
+    margin-bottom: 30px;
+}
+
+/*---------------------FUN PAGE-----------*/
+.question{
+    height: 300px;
+}
+
+#gmap{
+    width: 100%;
+    height: 500px;
+}
+.map_span img { max-width: none; }
+.profile-map img { max-width: none; }
+
+/*------------ MEDIA QUERIES---------------*/
+/*------------ Large desktop---------------*/
+@media (min-width: 1200px) {
+    /*------------ ALL GOOD---------------*/
+}
+ 
+/*------------ Portrait tablet to landscape and desktop---------------*/
+@media (min-width: 768px) and (max-width: 979px) {
+	 
+	.profile-pic{
+        width: 77px;
+        height: 77px;
+    }
+}
+ 
+@media (max-width: 767px) {
+    header{
+	height:70px !important;
+	width:100%;
+	border-top:none;
+	border-left:3px #FFCC00 solid;
+	border-radius:15px;
+	background:none;
+	}
+	.navigation{
+    padding:0px;
+	}
+	.main-nav {
+		height:70px;	
+	}
+	.main-nav ul{margin:0 auto;}	
+	.main-nav li{
+		width:15%;
+		float:left;
+		clear:none;
+		height:100%;
+	}
+	.main-nav li:hover{
+
+	}
+    .pull-right{
+        float: left;
+    }
+    .firstblock:first-of-type{
+        margin-top: 50px;
+    }
+    #login-img{
+        display: none;
+    }
+    .list-pic{
+        display: none;
+    }
+    .pillBtn{
+        width: 100%;
+		
+    }
+    .pillBtn:hover,.pillBtn:active, .pillBtn:focus{
+        text-decoration: none;
+        background: #FFF;
+    }
+    .profile-image{
+        display:none;
+    }
+    #register-btn{
+        margin-top: 18px;
+        width: 100%;
+    }
+    #login-btn{
+        width: 100%;
+    }
+}
+ 
+/*------------ Landscape phones and down---------------*/
+@media (max-width: 480px) {
+  
+}

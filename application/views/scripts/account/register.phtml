@@ -1,0 +1,14 @@
+<div class="span12 center clearfix push">
+    <div class="row">
+        <div class="span12">
+            <h1>Register</h1>
+            <?php echo $this->form ?>
+                <?php 
+                    if(isset($this->error)) {
+                        echo "<p>" . $this->error . "</p>";
+                    }
+                ?>
+            </form>
+        </div>
+    </div>
+</div>

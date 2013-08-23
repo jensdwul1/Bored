@@ -1,0 +1,18 @@
+<div class="span12 center clearfix push">
+    <div class="row">
+        <div class="span7 breath-bottom">
+            <h1>Edit your user profile</h1>
+            <?php echo $this->form ?>
+                <?php 
+                    if(isset($this->error)) {
+                        echo "<p>" . $this->error . "</p>";
+                    }
+                ?>
+            </form>
+            <a href="<?php echo $this->url(
+                array('controller'=> 'user', 'action'=>'index'),
+                'default',
+                true) ?>" class="btn btn-warning btn-block">Cancel</a>
+        </div>
+    </div>
+</div>

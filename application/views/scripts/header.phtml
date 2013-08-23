@@ -1,0 +1,36 @@
+<?php
+    $loggedin = false;
+    $auth = Zend_Auth::getInstance();
+    $id = $auth->getStorage()->read()['id'];
+    $userMapper = new Application_Model_UserMapper();
+    try {   
+        if($user = new Application_Model_User($userMapper->read($id)))
+        {
+            $loggedin = true;
+            $username = $user->getUsername();
+        }
+    }
+    catch (Exception $e)
+    {
+        $loggedin = false;;
+    }
+?>
+<header class="span1" >
+            <nav class=" navigation ">
+                <ul class="main-nav">
+                	<li ><a class="nav-element logo" title="Bored" href="<?php echo $this->url(array('controller'=>'index', 'action' => 'index'),'default',true) ?>"></a></li>
+                    <?php if($loggedin): ?>
+
+                        <li ><a class="nav-element UserIcon" title="User" href="<?php echo $this->url(array('controller'=>'user', 'action' => 'index'),'default',true) ?>"></a></li>  
+                        <li ><a class="nav-element FunIcon" title="Fun" href="<?php echo $this->url(array('controller'=>'index', 'action' => 'fun'), 'default', true) ?>"></a></li>
+                        <li ><a class="nav-element LogoutIcon" title="Logout" href="<?php echo $this->url(array('controller'=>'account', 'action' => 'logout'), 'default', true) ?>"></a></li>
+                    <?php else: ?>
+
+                        <li ><a class="nav-element LoginIcon" title="Login" href="<?php echo $this->url(array('controller'=>'account', 'action' => 'login'),'default',true) ?>"></a></li>
+                        <li ><a class="nav-element RegisterIcon" title="Register" href="<?php echo $this->url(array('controller'=>'account', 'action' => 'register'), 'default', true) ?>"></a></li>
+						
+                    <?php endif; ?>
+                    <li ><a class="nav-element AboutIcon" title="About" href="<?php echo $this->url(array('controller'=>'index', 'action' => 'about'), 'default', true) ?>"></a></li>
+                </ul>
+            </nav>
+</header>

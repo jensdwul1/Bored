@@ -1,0 +1,13 @@
+{
+    "name": "vendor/bored",
+    "description": "In Ghent but bored out of your mind? Find out what fun stuff you can do in Ghent!",
+    "authors": [
+        {
+            "name": "Jens De Wulf",
+            "email": "jdw.jensdewulf@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "2.*"
+    }
+}
